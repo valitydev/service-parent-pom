@@ -312,7 +312,7 @@
                   <goal>execute</goal>
                 </goals>
                 <configuration>
-                  <source>${project.basedir}/scripts/TestCoverageAnalysis.groovy</source>
+                  <source>https://raw.githubusercontent.com/rbkmoney/service-parent-pom/master/scripts/TestCoverageAnalysis.groovy</source>
                 </configuration>
               </execution>
             </executions>
