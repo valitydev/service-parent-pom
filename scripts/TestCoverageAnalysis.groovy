@@ -24,6 +24,7 @@ reportFile.withReader('UTF-8') { reader ->
 
     println "[" + ansiBlue + "INFO" + ansiReset + "] Instructions  ${instructionsCoverage}  (Missed ${instructionsMissed})"
     println "[" + ansiBlue + "INFO" + ansiReset + "] Branches      ${branchesCoverage}  (Missed ${branchesMissed})"
+    println "[" + ansiBlue + "INFO" + ansiReset + "]"
     println "[" + ansiBlue + "INFO" + ansiReset + "] For more information: open ./target/site/jacoco/index.html"
 }
 
