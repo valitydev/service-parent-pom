@@ -9,7 +9,7 @@
   <packaging>pom</packaging>
   <groupId>com.rbkmoney</groupId>
   <artifactId>service-parent-pom</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <description>RBKmoney spring starter parent</description>
   <name>RBKmoney spring starter parent</name>
   <url>https://github.com/rbkmoney/service-parent-pom</url>
@@ -31,9 +31,9 @@
   </developers>
 
   <scm>
-    <connection>scm:git:git://github.com/rbkmoney/spring-boot-starter-parent.git</connection>
-    <developerConnection>scm:git:ssh://github.com/rbkmoney/spring-boot-starter-parent.git</developerConnection>
-    <url>https://github.com/rbkmoney/spring-boot-starter-parent/tree/master</url>
+    <connection>scm:git:git://github.com/rbkmoney/service-parent-pom.git</connection>
+    <developerConnection>scm:git:ssh://github.com/rbkmoney/service-parent-pom.git</developerConnection>
+    <url>https://github.com/rbkmoney/service-parent-pom/tree/master</url>
   </scm>
 
   <properties>
