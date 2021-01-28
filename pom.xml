@@ -312,7 +312,7 @@
                   <goal>execute</goal>
                 </goals>
                 <configuration>
-                  <source>https://raw.githubusercontent.com/rbkmoney/test-coverage-analysis-script/master/TestCoverageAnalysis.groovy</source>
+                  <source>https://raw.githubusercontent.com/rbkmoney/test-coverage-analysis-script/master/script/TestCoverageAnalysis.groovy</source>
                 </configuration>
               </execution>
             </executions>
