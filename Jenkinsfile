@@ -1,5 +1,5 @@
 #!groovy
-build('spring-boot-starter-parent', 'docker-host') {
+build('service-parent-pom', 'docker-host') {
     checkoutRepo()
     loadBuildUtils()
 
