@@ -9,7 +9,7 @@
   <packaging>pom</packaging>
   <groupId>com.rbkmoney</groupId>
   <artifactId>service-parent-pom</artifactId>
-  <version>1.0.3</version>
+  <version>1.0.4</version>
   <description>RBKmoney spring starter parent</description>
   <name>RBKmoney spring starter parent</name>
   <url>https://github.com/rbkmoney/service-parent-pom</url>
@@ -46,6 +46,18 @@
     <pubStagingRepo>https://oss.sonatype.org/</pubStagingRepo>
     <checkstyle.config.path>https://raw.githubusercontent.com/rbkmoney/java-checkstyle-config/master/conf/rbkmoney_google_checkstyle.xml</checkstyle.config.path>
   </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.rbkmoney</groupId>
+        <artifactId>java-service-dependencies</artifactId>
+        <version>1.0.1</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
   <profiles>
     <profile>
@@ -221,7 +233,6 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-source-plugin</artifactId>
-            <version>3.2.1</version>
             <executions>
               <execution>
                 <id>attach-sources</id>
@@ -242,7 +253,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-checkstyle-plugin</artifactId>
-            <version>3.1.1</version>
+            <version>3.1.2</version>
             <executions>
               <execution>
                 <id>validate</id>
@@ -264,7 +275,7 @@
           <plugin>
             <groupId>org.jacoco</groupId>
             <artifactId>jacoco-maven-plugin</artifactId>
-            <version>0.8.5</version>
+            <version>0.8.6</version>
             <configuration>
               <excludes>
                 <exclude>**/model/**/*</exclude>>
@@ -316,7 +327,7 @@
             <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-compiler-plugin</artifactId>
-              <version>3.8.0</version>
+              <version>3.8.1</version>
               <configuration>
                 <source>11</source>
                 <target>11</target>
