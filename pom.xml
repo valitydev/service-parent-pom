@@ -9,7 +9,7 @@
   <packaging>pom</packaging>
   <groupId>com.rbkmoney</groupId>
   <artifactId>service-parent-pom</artifactId>
-  <version>1.0.4</version>
+  <version>1.0.5</version>
   <description>RBKmoney spring starter parent</description>
   <name>RBKmoney spring starter parent</name>
   <url>https://github.com/rbkmoney/service-parent-pom</url>
@@ -45,6 +45,8 @@
     <pubStagingRepoId>ossrh</pubStagingRepoId>
     <pubStagingRepo>https://oss.sonatype.org/</pubStagingRepo>
     <checkstyle.config.path>https://raw.githubusercontent.com/rbkmoney/java-checkstyle-config/master/conf/rbkmoney_google_checkstyle.xml</checkstyle.config.path>
+    <shared-resources.version>0.3.8</shared-resources.version>
+    <dockerfile.base.service.tag>57e26d8ee999d7b0b50248c22afc63e6f926d276</dockerfile.base.service.tag>
   </properties>
 
   <dependencyManagement>
