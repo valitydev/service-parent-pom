@@ -9,7 +9,7 @@
   <packaging>pom</packaging>
   <groupId>com.rbkmoney</groupId>
   <artifactId>service-parent-pom</artifactId>
-  <version>2.0.7</version>
+  <version>2.0.8</version>
   <description>RBKmoney spring starter parent</description>
   <name>RBKmoney spring starter parent</name>
   <url>https://github.com/rbkmoney/service-parent-pom</url>
@@ -273,6 +273,9 @@
                   <failsOnError>true</failsOnError>
                   <consoleOutput>true</consoleOutput>
                   <violationSeverity>warning</violationSeverity>
+                  <sourceDirectories>
+                    <sourceDirectory>${project.build.sourceDirectory}</sourceDirectory>
+                  </sourceDirectories>
                   <includeTestSourceDirectory>true</includeTestSourceDirectory>
                   <suppressionsLocation>${checkstyle.config.suppressions.path}</suppressionsLocation>
                 </configuration>
