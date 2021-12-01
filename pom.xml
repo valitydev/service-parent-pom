@@ -61,6 +61,7 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+
   <dependencies>
     <!--JUnit Jupiter Engine to depend on the JUnit5 engine and JUnit 5 API -->
     <dependency>
