@@ -9,7 +9,7 @@
   <packaging>pom</packaging>
   <groupId>com.rbkmoney</groupId>
   <artifactId>service-parent-pom</artifactId>
-  <version>2.0.14</version>
+  <version>2.0.15</version>
   <description>RBKmoney spring starter parent</description>
   <name>RBKmoney spring starter parent</name>
   <url>https://github.com/rbkmoney/service-parent-pom</url>
@@ -55,7 +55,7 @@
       <dependency>
         <groupId>com.rbkmoney</groupId>
         <artifactId>java-service-dependencies</artifactId>
-        <version>1.2.8</version>
+        <version>1.2.9</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
