@@ -10,11 +10,11 @@
 
   <groupId>dev.vality</groupId>
   <artifactId>service-parent-pom</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
 
   <name>Vality parent</name>
   <description>Vality library parent pom</description>
-  <url>https://github.com/valitydev/java-service-dependencies</url>
+  <url>https://github.com/valitydev/service-parent-pom</url>
 
   <licenses>
     <license>
@@ -24,9 +24,9 @@
   </licenses>
 
   <scm>
-    <url>https://github.com/valitydev/java-service-dependencies</url>
-    <developerConnection>scm:git:ssh://github.com/valitydev/java-service-dependencies.git</developerConnection>
-    <connection>scm:git:git://github.com/valitydev/java-service-dependencies.git</connection>
+    <url>https://github.com/valitydev/service-parent-pom</url>
+    <developerConnection>scm:git:ssh://github.com/valitydev/service-parent-pom.git</developerConnection>
+    <connection>scm:git:git://github.com/valitydev/service-parent-pom.git</connection>
   </scm>
 
   <developers>
@@ -56,7 +56,7 @@
       <dependency>
         <groupId>dev.vality</groupId>
         <artifactId>java-service-dependencies</artifactId>
-        <version>1.0.1</version>
+        <version>1.0.2</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
