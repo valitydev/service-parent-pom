@@ -10,7 +10,7 @@
 
   <groupId>dev.vality</groupId>
   <artifactId>service-parent-pom</artifactId>
-  <version>1.0.6</version>
+  <version>1.0.7</version>
 
   <name>Vality parent</name>
   <description>Vality library parent pom</description>
@@ -48,6 +48,8 @@
     <checkstyle.config.path>https://raw.githubusercontent.com/valitydev/java-checkstyle-config/master/conf/rbkmoney_google_checkstyle.xml</checkstyle.config.path>
     <checkstyle.config.suppressions.path>https://raw.githubusercontent.com/valitydev/java-checkstyle-config/master/conf/checkstyle-suppressions.xml</checkstyle.config.suppressions.path>
     <dockerfile.base.service.tag>c0612d6052ac049496b72a23a04acb142035f249</dockerfile.base.service.tag>
+
+    <shared-resources.version>1.0.0</shared-resources.version>
   </properties>
 
   <dependencyManagement>
@@ -55,7 +57,7 @@
       <dependency>
         <groupId>dev.vality</groupId>
         <artifactId>java-service-dependencies</artifactId>
-        <version>1.0.6</version>
+        <version>1.0.7</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
