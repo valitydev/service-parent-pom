@@ -10,7 +10,7 @@
 
   <groupId>dev.vality</groupId>
   <artifactId>service-parent-pom</artifactId>
-  <version>1.0.4</version>
+  <version>1.0.5</version>
 
   <name>Vality parent</name>
   <description>Vality library parent pom</description>
