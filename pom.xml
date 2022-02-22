@@ -10,7 +10,7 @@
 
   <groupId>dev.vality</groupId>
   <artifactId>service-parent-pom</artifactId>
-  <version>1.0.10</version>
+  <version>1.0.11</version>
 
   <name>Vality parent</name>
   <description>Vality library parent pom</description>
@@ -51,7 +51,7 @@
     <checkstyle.config.suppressions.path>https://raw.githubusercontent.com/valitydev/java-checkstyle-config/master/conf/checkstyle-suppressions.xml</checkstyle.config.suppressions.path>
     <dockerfile.base.service.tag>c0612d6052ac049496b72a23a04acb142035f249</dockerfile.base.service.tag>
 
-    <shared-resources.version>1.0.0</shared-resources.version>
+    <shared-resources.version>1.0.1</shared-resources.version>
   </properties>
 
   <dependencyManagement>
@@ -59,28 +59,12 @@
       <dependency>
         <groupId>dev.vality</groupId>
         <artifactId>java-service-dependencies</artifactId>
-        <version>1.0.9</version>
+        <version>1.0.11</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>
-
-  <dependencies>
-    <!--JUnit Jupiter Engine to depend on the JUnit5 engine and JUnit 5 API -->
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-engine</artifactId>
-      <version>${junit-jupiter.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <!--JUnit Vintage Engine to depend on the JUnit4 engine and JUnit 4 API  -->
-    <dependency>
-      <groupId>org.junit.vintage</groupId>
-      <artifactId>junit-vintage-engine</artifactId>
-      <version>${junit-jupiter.version}</version>
-    </dependency>
-  </dependencies>
 
   <profiles>
     <profile>
@@ -112,7 +96,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-javadoc-plugin</artifactId>
-            <version>3.3.1</version>
+            <version>3.3.2</version>
             <executions>
               <execution>
                 <id>attach-javadocs</id>
