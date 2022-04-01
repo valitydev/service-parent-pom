@@ -3,7 +3,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.6.4</version>
+    <version>2.6.6</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <packaging>pom</packaging>
@@ -52,7 +52,6 @@
     </checkstyle.config.path>
     <checkstyle.config.suppressions.path>https://raw.githubusercontent.com/valitydev/java-checkstyle-config/master/conf/checkstyle-suppressions.xml</checkstyle.config.suppressions.path>
     <dockerfile.base.service.tag>c0612d6052ac049496b72a23a04acb142035f249</dockerfile.base.service.tag>
-
     <shared-resources.version>2.0.0-BETA-4</shared-resources.version>
   </properties>
 
@@ -61,7 +60,7 @@
       <dependency>
         <groupId>dev.vality</groupId>
         <artifactId>java-service-dependencies</artifactId>
-        <version>1.0.12</version>
+        <version>1.0.13</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
