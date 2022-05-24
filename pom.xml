@@ -10,7 +10,7 @@
 
   <groupId>dev.vality</groupId>
   <artifactId>service-parent-pom</artifactId>
-  <version>1.0.17</version>
+  <version>2.0.0-BETA-10</version>
 
   <name>Vality parent</name>
   <description>Vality library parent pom</description>
@@ -39,6 +39,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
     <pubRepoId>ossrh</pubRepoId>
     <pubRepo>https://s01.oss.sonatype.org/content/repositories/releases</pubRepo>
     <pubSnapRepoId>ossrh</pubSnapRepoId>
@@ -50,7 +52,7 @@
     </checkstyle.config.path>
     <checkstyle.config.suppressions.path>https://raw.githubusercontent.com/valitydev/java-checkstyle-config/master/conf/checkstyle-suppressions.xml</checkstyle.config.suppressions.path>
     <dockerfile.base.service.tag>c0612d6052ac049496b72a23a04acb142035f249</dockerfile.base.service.tag>
-    <shared-resources.version>1.0.1</shared-resources.version>
+    <shared-resources.version>2.0.0-BETA-4</shared-resources.version>
   </properties>
 
   <dependencyManagement>
@@ -317,8 +319,8 @@
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-compiler-plugin</artifactId>
               <configuration>
-                <source>15</source>
-                <target>15</target>
+                <source>${maven.compiler.source}</source>
+                <target>${maven.compiler.target}</target>
               </configuration>
             </plugin>
           </plugins>
