@@ -10,7 +10,7 @@
 
   <groupId>dev.vality</groupId>
   <artifactId>service-parent-pom</artifactId>
-  <version>1.0.18</version>
+  <version>1.0.19</version>
 
   <name>Vality parent</name>
   <description>Vality library parent pom</description>
@@ -48,9 +48,13 @@
     <checkstyle.config.path>
       https://raw.githubusercontent.com/valitydev/java-checkstyle-config/master/conf/valitydev_google_checkstyle.xml
     </checkstyle.config.path>
-    <checkstyle.config.suppressions.path>https://raw.githubusercontent.com/valitydev/java-checkstyle-config/master/conf/checkstyle-suppressions.xml</checkstyle.config.suppressions.path>
+    <checkstyle.config.suppressions.path>
+      https://raw.githubusercontent.com/valitydev/java-checkstyle-config/master/conf/checkstyle-suppressions.xml
+    </checkstyle.config.suppressions.path>
     <dockerfile.base.service.tag>c0612d6052ac049496b72a23a04acb142035f249</dockerfile.base.service.tag>
     <shared-resources.version>1.0.1</shared-resources.version>
+    <woody.version>1.0.4</woody.version>
+    <aws-msk-iam-auth.version>1.1.4</aws-msk-iam-auth.version>
   </properties>
 
   <dependencyManagement>
@@ -58,7 +62,7 @@
       <dependency>
         <groupId>dev.vality</groupId>
         <artifactId>java-service-dependencies</artifactId>
-        <version>1.0.17</version>
+        <version>1.0.18</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -67,12 +71,36 @@
 
   <dependencies>
     <dependency>
+      <groupId>dev.vality.woody</groupId>
+      <artifactId>woody-thrift</artifactId>
+      <version>${woody.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>dev.vality.woody</groupId>
+      <artifactId>woody-api</artifactId>
+      <version>${woody.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>dev.vality</groupId>
+      <artifactId>shared-resources</artifactId>
+      <version>${shared-resources.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+    </dependency>
+    <dependency>
       <groupId>io.micrometer</groupId>
       <artifactId>micrometer-core</artifactId>
     </dependency>
     <dependency>
       <groupId>io.micrometer</groupId>
       <artifactId>micrometer-registry-prometheus</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>software.amazon.msk</groupId>
+      <artifactId>aws-msk-iam-auth</artifactId>
+      <version>${aws-msk-iam-auth.version}</version>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
@@ -289,8 +317,8 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-resources-plugin</artifactId>
-         <!-- Не поднимать версию, там баг! (3.2.0) -->
-            <version>3.3.0</version>
+            <!-- Не поднимать версию, там баг! (3.2.0) -->
+            <version>3.2.0</version>
           </plugin>
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
