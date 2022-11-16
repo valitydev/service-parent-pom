@@ -11,7 +11,7 @@
 
     <groupId>dev.vality</groupId>
     <artifactId>service-parent-pom</artifactId>
-    <version>1.0.20</version>
+    <version>1.0.21</version>
 
     <name>Vality parent</name>
     <description>Vality library parent pom</description>
@@ -53,7 +53,7 @@
             https://raw.githubusercontent.com/valitydev/java-checkstyle-config/master/conf/checkstyle-suppressions.xml
         </checkstyle.config.suppressions.path>
         <dockerfile.base.service.tag>c0612d6052ac049496b72a23a04acb142035f249</dockerfile.base.service.tag>
-        <shared-resources.version>1.0.1</shared-resources.version>
+        <shared-resources.version>2.0.2</shared-resources.version>
         <woody.version>1.0.4</woody.version>
     </properties>
 
