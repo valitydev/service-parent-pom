@@ -1,9 +1,6 @@
 name: Maven Deploy Artifact
 
 on:
-  pull_request:
-    branches:
-      - '*'
   push:
     branches:
       - 'master'
