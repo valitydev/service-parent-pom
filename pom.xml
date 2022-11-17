@@ -38,24 +38,26 @@
         </developer>
     </developers>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>17</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
-    <pubRepoId>ossrh</pubRepoId>
-    <pubRepo>https://s01.oss.sonatype.org/content/repositories/releases</pubRepo>
-    <pubSnapRepoId>ossrh</pubSnapRepoId>
-    <pubSnapRepo>https://s01.oss.sonatype.org/content/repositories/snapshots</pubSnapRepo>
-    <pubStagingRepoId>ossrh</pubStagingRepoId>
-    <pubStagingRepo>https://s01.oss.sonatype.org/</pubStagingRepo>
-    <checkstyle.config.path>
-      https://raw.githubusercontent.com/valitydev/java-checkstyle-config/master/conf/valitydev_google_checkstyle.xml
-    </checkstyle.config.path>
-    <checkstyle.config.suppressions.path>https://raw.githubusercontent.com/valitydev/java-checkstyle-config/master/conf/checkstyle-suppressions.xml</checkstyle.config.suppressions.path>
-    <dockerfile.base.service.tag>c0612d6052ac049496b72a23a04acb142035f249</dockerfile.base.service.tag>
-    <shared-resources.version>2.0.0</shared-resources.version>
-    <woody.version>1.0.4</woody.version>
-  </properties>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <pubRepoId>ossrh</pubRepoId>
+        <pubRepo>https://s01.oss.sonatype.org/content/repositories/releases</pubRepo>
+        <pubSnapRepoId>ossrh</pubSnapRepoId>
+        <pubSnapRepo>https://s01.oss.sonatype.org/content/repositories/snapshots</pubSnapRepo>
+        <pubStagingRepoId>ossrh</pubStagingRepoId>
+        <pubStagingRepo>https://s01.oss.sonatype.org/</pubStagingRepo>
+        <checkstyle.config.path>
+            https://raw.githubusercontent.com/valitydev/java-checkstyle-config/master/conf/valitydev_google_checkstyle.xml
+        </checkstyle.config.path>
+        <checkstyle.config.suppressions.path>
+            https://raw.githubusercontent.com/valitydev/java-checkstyle-config/master/conf/checkstyle-suppressions.xml
+        </checkstyle.config.suppressions.path>
+        <dockerfile.base.service.tag>c0612d6052ac049496b72a23a04acb142035f249</dockerfile.base.service.tag>
+        <shared-resources.version>2.0.0</shared-resources.version>
+        <woody.version>1.0.4</woody.version>
+    </properties>
 
     <dependencyManagement>
         <dependencies>
@@ -341,8 +343,8 @@
                             <groupId>org.apache.maven.plugins</groupId>
                             <artifactId>maven-compiler-plugin</artifactId>
                             <configuration>
-                              <source>${maven.compiler.source}</source>
-                              <target>${maven.compiler.target}</target>
+                                <source>${maven.compiler.source}</source>
+                                <target>${maven.compiler.target}</target>
                             </configuration>
                         </plugin>
                     </plugins>
