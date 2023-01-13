@@ -57,6 +57,7 @@
         <dockerfile.base.service.tag>c0612d6052ac049496b72a23a04acb142035f249</dockerfile.base.service.tag>
         <shared-resources.version>2.0.3</shared-resources.version>
         <woody.version>1.0.4</woody.version>
+        <resource.delimiter>${*}</resource.delimiter>
     </properties>
 
     <dependencyManagement>
