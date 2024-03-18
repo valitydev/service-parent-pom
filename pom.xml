@@ -11,7 +11,7 @@
 
     <groupId>dev.vality</groupId>
     <artifactId>service-parent-pom</artifactId>
-    <version>2.2.0</version>
+    <version>2.3.0</version>
     <packaging>pom</packaging>
 
     <name>Vality parent</name>
@@ -57,7 +57,7 @@
         </checkstyle.config.suppressions.path>
         <dockerfile.base.service.tag>c0612d6052ac049496b72a23a04acb142035f249</dockerfile.base.service.tag>
         <shared-resources.version>2.1.0</shared-resources.version>
-        <woody.version>1.0.5</woody.version>
+        <woody.version>2.0.0</woody.version>
         <resource.delimiter>${*}</resource.delimiter>
     </properties>
 
