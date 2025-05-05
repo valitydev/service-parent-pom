@@ -209,6 +209,10 @@
                                 <googleJavaFormat>
                                     <version>1.26.0</version>
                                 </googleJavaFormat>
+                                <importOrder>
+                                    <order>java|javax|dev|com|org|lombok</order>
+                                </importOrder>
+                                <removeUnusedImports />
                             </java>
                         </configuration>
                     </plugin>
