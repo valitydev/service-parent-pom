@@ -6,12 +6,12 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.5.0</version>
+        <version>3.5.3</version>
     </parent>
 
     <groupId>dev.vality</groupId>
     <artifactId>service-parent-pom</artifactId>
-    <version>3.1.1</version>
+    <version>3.1.2</version>
     <packaging>pom</packaging>
 
     <name>Vality parent</name>
@@ -44,11 +44,11 @@
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <pubRepoId>ossrh</pubRepoId>
-        <pubRepo>https://s01.oss.sonatype.org/content/repositories/releases</pubRepo>
+        <pubRepo>https://ossrh-staging-api.central.sonatype.com/content/repositories/releases</pubRepo>
         <pubSnapRepoId>ossrh</pubSnapRepoId>
-        <pubSnapRepo>https://s01.oss.sonatype.org/content/repositories/snapshots</pubSnapRepo>
+        <pubSnapRepo>https://ossrh-staging-api.central.sonatype.com/content/repositories/snapshots</pubSnapRepo>
         <pubStagingRepoId>ossrh</pubStagingRepoId>
-        <pubStagingRepo>https://s01.oss.sonatype.org/</pubStagingRepo>
+        <pubStagingRepo>https://ossrh-staging-api.central.sonatype.com</pubStagingRepo>
         <checkstyle.config.path>
             https://raw.githubusercontent.com/valitydev/java-checkstyle-config/master/conf/valitydev_google_checkstyle.xml
         </checkstyle.config.path>
@@ -66,7 +66,7 @@
             <dependency>
                 <groupId>dev.vality</groupId>
                 <artifactId>java-service-dependencies</artifactId>
-                <version>1.0.29</version>
+                <version>1.0.30</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -165,7 +165,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>3.2.7</version>
+                        <version>3.2.8</version>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>
