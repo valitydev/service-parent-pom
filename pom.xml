@@ -11,7 +11,7 @@
 
     <groupId>dev.vality</groupId>
     <artifactId>service-parent-pom</artifactId>
-    <version>3.1.1</version>
+    <version>3.1.2</version>
     <packaging>pom</packaging>
 
     <name>Vality parent</name>
@@ -66,7 +66,7 @@
             <dependency>
                 <groupId>dev.vality</groupId>
                 <artifactId>java-service-dependencies</artifactId>
-                <version>1.0.29</version>
+                <version>1.0.30</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
