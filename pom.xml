@@ -11,7 +11,7 @@
 
     <groupId>dev.vality</groupId>
     <artifactId>service-parent-pom</artifactId>
-    <version>3.1.8</version>
+    <version>3.1.9</version>
     <packaging>pom</packaging>
 
     <name>Vality parent</name>
@@ -51,6 +51,7 @@
         </checkstyle.config.suppressions.path>
         <dockerfile.base.service.tag>c0612d6052ac049496b72a23a04acb142035f249</dockerfile.base.service.tag>
         <resource.delimiter>${*}</resource.delimiter>
+        <shared-resources.version>3.0.1</shared-resources.version>
     </properties>
 
     <dependencyManagement>
@@ -69,6 +70,7 @@
         <dependency>
             <groupId>dev.vality</groupId>
             <artifactId>shared-resources</artifactId>
+            <version>${shared-resources.version}</version>
         </dependency>
         <dependency>
             <groupId>io.micrometer</groupId>
@@ -104,7 +106,6 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>3.12.0</version>
                         <executions>
                             <execution>
                                 <id>attach-javadocs</id>
@@ -268,17 +269,14 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-resources-plugin</artifactId>
-                        <version>3.3.1</version>
                     </plugin>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-surefire-plugin</artifactId>
-                        <version>3.5.4</version>
                     </plugin>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-failsafe-plugin</artifactId>
-                        <version>3.5.4</version>
                         <executions>
                             <execution>
                                 <goals>
@@ -301,7 +299,6 @@
                     <plugin>
                         <groupId>org.cyclonedx</groupId>
                         <artifactId>cyclonedx-maven-plugin</artifactId>
-                        <version>2.9.1</version>
                         <executions>
                             <execution>
                                 <phase>package</phase>
