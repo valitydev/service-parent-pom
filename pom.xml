@@ -6,12 +6,12 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.5.5</version>
+        <version>3.5.7</version>
     </parent>
 
     <groupId>dev.vality</groupId>
     <artifactId>service-parent-pom</artifactId>
-    <version>3.1.7</version>
+    <version>3.1.8</version>
     <packaging>pom</packaging>
 
     <name>Vality parent</name>
@@ -50,8 +50,6 @@
             https://raw.githubusercontent.com/valitydev/java-checkstyle-config/master/conf/checkstyle-suppressions.xml
         </checkstyle.config.suppressions.path>
         <dockerfile.base.service.tag>c0612d6052ac049496b72a23a04acb142035f249</dockerfile.base.service.tag>
-        <shared-resources.version>3.0.1</shared-resources.version>
-        <woody.version>2.0.9</woody.version>
         <resource.delimiter>${*}</resource.delimiter>
     </properties>
 
@@ -60,7 +58,7 @@
             <dependency>
                 <groupId>dev.vality</groupId>
                 <artifactId>java-service-dependencies</artifactId>
-                <version>1.0.36</version>
+                <version>1.0.37</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -69,23 +67,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>dev.vality.woody</groupId>
-            <artifactId>woody-thrift</artifactId>
-            <version>${woody.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>dev.vality.woody</groupId>
-            <artifactId>woody-api</artifactId>
-            <version>${woody.version}</version>
-        </dependency>
-        <dependency>
             <groupId>dev.vality</groupId>
             <artifactId>shared-resources</artifactId>
-            <version>${shared-resources.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
         </dependency>
         <dependency>
             <groupId>io.micrometer</groupId>
@@ -110,7 +93,7 @@
                     <plugin>
                         <groupId>org.sonatype.central</groupId>
                         <artifactId>central-publishing-maven-plugin</artifactId>
-                        <version>0.8.0</version>
+                        <version>0.9.0</version>
                         <extensions>true</extensions>
                         <configuration>
                             <publishingServerId>ossrh</publishingServerId>
@@ -121,7 +104,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>3.11.2</version>
+                        <version>3.12.0</version>
                         <executions>
                             <execution>
                                 <id>attach-javadocs</id>
@@ -207,7 +190,7 @@
                             <dependency>
                                 <groupId>com.puppycrawl.tools</groupId>
                                 <artifactId>checkstyle</artifactId>
-                                <version>10.23.1</version>
+                                <version>10.26.1</version>
                             </dependency>
                         </dependencies>
                         <executions>
@@ -234,7 +217,7 @@
                     <plugin>
                         <groupId>org.jacoco</groupId>
                         <artifactId>jacoco-maven-plugin</artifactId>
-                        <version>0.8.13</version>
+                        <version>0.8.14</version>
                         <configuration>
                             <excludes>
                                 <exclude>**/model/**/*</exclude>>
@@ -290,12 +273,12 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-surefire-plugin</artifactId>
-                        <version>3.5.3</version>
+                        <version>3.5.4</version>
                     </plugin>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-failsafe-plugin</artifactId>
-                        <version>3.5.3</version>
+                        <version>3.5.4</version>
                         <executions>
                             <execution>
                                 <goals>
