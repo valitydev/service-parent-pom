@@ -51,7 +51,7 @@
         </checkstyle.config.suppressions.path>
         <dockerfile.base.service.tag>c0612d6052ac049496b72a23a04acb142035f249</dockerfile.base.service.tag>
         <resource.delimiter>${*}</resource.delimiter>
-        <shared-resources.version>3.0.1</shared-resources.version>
+        <shared-resources.version>4.0.0</shared-resources.version>
     </properties>
 
     <dependencyManagement>
