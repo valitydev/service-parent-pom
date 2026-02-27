@@ -5,7 +5,7 @@ on:
     branches:
       - 'master'
       - 'main'
-      - 'epic'
+      - 'epic/**'
 
 jobs:
   deploy:
