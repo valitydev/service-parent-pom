@@ -50,7 +50,7 @@
             https://raw.githubusercontent.com/valitydev/java-checkstyle-config/master/conf/checkstyle-suppressions.xml
         </checkstyle.config.suppressions.path>
         <resource.delimiter>${*}</resource.delimiter>
-        <shared-resources.version>4.0.0</shared-resources.version>
+        <shared-resources.version>5.0.0</shared-resources.version>
     </properties>
 
     <dependencyManagement>
